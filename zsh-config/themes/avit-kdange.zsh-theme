@@ -8,7 +8,7 @@ typeset +H _hist_no="%{$fg[grey]%}%h%{$reset_color%}"
 time_str=$(date +%H:%M:%S)
 
 PROMPT='
-$(_user_host)${_current_dir} $(git_prompt_info) $(ruby_prompt_info) ${time_str}
+$(_user_host)${_current_dir} $(git_prompt_info) $(ruby_prompt_info) $(date +%H:%M:%S)
 %{%(!.${fg[red]}.${fg[white]})%}▶%{$reset_color%} '
 
 PROMPT2='%{%(!.${fg[red]}.${fg[white]})%}◀%{$reset_color%} '
